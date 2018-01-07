@@ -20,4 +20,27 @@ describe("Actions - tests", function () {
             }
         });
     });
+
+    it("defineRow return correct value", function () {
+        var row = {
+            getType: function () {
+                return 123;
+            },
+            getParams: function () {
+                return {
+                    param1: 'value1',
+                    param2: 'value2'
+                };
+            }
+        };
+        var actionJson = Actions.defineRow(row);
+        expect(JSON.parse(actionJson)).toEqual({
+            action: Workbook.actions.DEFINE_ROW,
+            rowType: 123,
+            params: {
+                param1: 'value1',
+                param2: 'value2'
+            }
+        });
+    });
 });
