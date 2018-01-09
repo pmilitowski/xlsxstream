@@ -247,7 +247,7 @@ workbookStream
 passThrough.push(Xlsxstream.actions.addWorksheet('WorksheetName'));
 
 // Merge A1:B1 cells
-passThrough.push(Xlsxstream.actions.mergeCells(new Worksheet.MergedCells(1, 1, 2, 1)));
+passThrough.push(Xlsxstream.actions.mergeCells(new Worksheet.MergedCells(1, 2, 1, 1)));
 
 passThrough.push(Xlsxstream.actions.closeWorksheet());
 passThrough.push(Xlsxstream.actions.closeWorkbook());
