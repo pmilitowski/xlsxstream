@@ -1,6 +1,6 @@
 {
   "name": "@pmilitowski/xlsxstream",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Stream xlsx module",
   "main": "index.js",
   "scripts": {
